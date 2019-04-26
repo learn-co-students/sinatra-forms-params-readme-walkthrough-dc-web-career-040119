@@ -10,6 +10,20 @@
     <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSwGoDVUDPLd8f_397Fp9BrLKlu-6msu0sSiT0LeEZQ8Ga2228z">
 
     <!-- Insert Your Form Below -->
-
+    <form action="/food" method="POST">
+      <p>Your Name: <input type="text" name="name"> <!--it's key is name, it's value is the user's input. i.e. "Joe". -->
+      <p>Your Favorite Food: <input type="text" name="favorite_food"</p><!--it's key is favorite_food, it's up to the user to input the value via this form -->
+      <input type="submit">
+      <!-- You'll only need one submit button at the bottom of your form -->
+    </form>
   </body>
 </html>
+
+
+
+<!-- This form creates a params hash! -->
+<!-- The params is this applications instance of the object that the client created with this form:
+
+params = {
+  :name => "Sam", :favorite_food => "Green Eggs and Ham"
+}    -->
